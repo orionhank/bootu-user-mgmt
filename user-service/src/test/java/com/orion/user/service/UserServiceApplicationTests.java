@@ -18,7 +18,7 @@ public class UserServiceApplicationTests {
 
     @Test
     public void applicationStarts() {
-        UserServiceApplication.main(new String[] {});
+        UserServiceApplication.main(new String[]{});
     }
 
 
@@ -27,9 +27,9 @@ public class UserServiceApplicationTests {
         UserServiceApplication bootuApp = new UserServiceApplication();
         Class<UserServiceApplication> cBoot = UserServiceApplication.class;
         try {
-            Method method = cBoot.getDeclaredMethod("configure", new Class[] {SpringApplicationBuilder.class});
+            Method method = cBoot.getDeclaredMethod("configure", new Class[]{SpringApplicationBuilder.class});
             method.setAccessible(true);
-            method.invoke(bootuApp, new Object[] { new SpringApplicationBuilder() });
+            method.invoke(bootuApp, new Object[]{new SpringApplicationBuilder()});
         } catch (Exception e) {
             e.printStackTrace();
         }

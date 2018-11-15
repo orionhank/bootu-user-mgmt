@@ -25,7 +25,7 @@ public class UserControllerTest {
     private MockMvc mockMvc;
 
     @Autowired
-    WebApplicationContext wac;
+    private WebApplicationContext wac;
 
     @Before
     public void setUp() throws Exception {
